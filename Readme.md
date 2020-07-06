@@ -1,7 +1,7 @@
 # Introduction fsbridge
 Pont FSUIPC/MQTT en python 2.7 pour tourner sur la machine winXP.
 
-esp8266_fsx sert d'afficheur distant
+Le depot esp32_cdu sert d'afficheur distant
 
 # Installation
 ## Installation des prerequis (win XP)
