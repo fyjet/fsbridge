@@ -18,7 +18,7 @@ Installer mosquitto 1.4.9 et les librairies complémentaires
 Installer TortoiseGit 1.7.2.0
 
 ## Installation fsbridge
-Faire un clone git du depot fsbridge
+Faire un clone git du depot fsbridge ou telecharger un release https://github.com/fyjet/fsbridge/tags
 
 # Execution
 Lancer Flight Simulator (FSX ou FS9)
