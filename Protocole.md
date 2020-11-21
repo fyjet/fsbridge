@@ -1,14 +1,14 @@
 ## Liste des valeurs des constantes
 ### Disposition ecran
 L'ecran est divise en 4 colonnes et 8 lignes. Le code position sur 2 chiffres donne la colonne (a partir de 0) et la ligne (a partir de 1) depuis le coin superieur gauche
-01 11 21 31 
-02 12 22 32
-03 13 23 33
-04 14 24 34
-05 15 25 35
-06 16 26 36
-07 17 27 37
-08 18 28 38
+01 11 21 31  
+02 12 22 32   
+03 13 23 33  
+04 14 24 34  
+05 15 25 35  
+06 16 26 36  
+07 17 27 37  
+08 18 28 38  
 
 ### Encodeurs
 INC1UP 50  
