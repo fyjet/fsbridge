@@ -1,6 +1,6 @@
 ## Liste des valeurs des constantes
 ### Disposition ecran
-L'ecran est divise en 4 colonnes et 8 lignes. Le code position sur 2 chiffres donne la colonne (a partir de 0) et la ligne (a partir de 1) depuis le coin superieur gauche
+L'ecran est divise en 4 colonnes et 8 lignes. Le code position sur 2 chiffres donne la colonne (a partir de 0) et la ligne (a partir de 1) depuis le coin superieur gauche  
 01 11 21 31  
 02 12 22 32   
 03 13 23 33  
