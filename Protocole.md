@@ -1,37 +1,31 @@
-## Liste ey valeur des constantes
-### Side Keys
-LSK1 01 RSK1 11  
-LSK2 02 RSK2 12  
-LSK3 03 RSK3 13  
-LSK4 04 RSK4 14  
-LSK5 05 RSK5 15  
-LSK6 06 RSK6 16  
-LSK7 07 RSK7 17  
-LSK8 08 RSK8 18  
-### Couleurs
-WHITE 99  
-YELLOW 98  
-GREEN 97  
-BLACK 96  
-### Boutons tactiles
-LSK1 01 RSK1 11  
-LSK2 02 RSK2 12  
-LSK3 03 RSK3 13  
-LSK4 04 RSK3 14  
-LSK4 04 RSK4 14  
-LSK5 05 RSK5 15  
-LSK6 06 RSK6 16  
-LSK7 07 RSK7 17  
-LSK8 08 RSK8 18  
+## Liste des valeurs des constantes
+### Disposition ecran
+L'ecran est divise en 4 colonnes et 8 lignes. Le code position sur 2 chiffres donne la colonne (a partir de 0) et la ligne (a partir de 1) depuis le coin superieur gauche
+01 11 21 31 
+02 12 22 32
+03 13 23 33
+04 14 24 34
+05 15 25 35
+06 16 26 36
+07 17 27 37
+08 18 28 38
+
 ### Encodeurs
 INC1UP 50  
 INC1DN 51  
 INC2UP 52  
 INC2DN 53  
-### Boutons mecanbiques
+
+### Boutons mecaniques
 BT1 57  
 BT2 58  
 BT3 59  
+
+### Couleurs
+WHITE 99  
+YELLOW 98  
+GREEN 97  
+BLACK 96  
 
 ## bridge vers device (mode commande)
 ### Nouvel ecran
@@ -42,13 +36,13 @@ New Screen, efface l'ecran, supprime les boutons/reactions et ecrit titre en hau
 ### Creer un bouton clickable sur l'ecran
 topic: j/[nomDevice]/c/d  
 content: B,[code Side Key sur 2 car],[intutule bouton]  
-cree un Bonton vert LSK1-4, RSK1-4, qui réagit aux appuis et retourn la valeur du bouton presse sur le topic key
+cree un Bonton encadre en vert LSK1-4, RSK1-4, qui rÃ©agit aux appuis et retourne la position du bouton presse sur le topic key
 
 ### Affichage texte, avec ou sans contour clickable
 topic: j/[nomDevice]/c/d  
 content: T,XX,CC,B,Z,[chaine formattee]  
 affichage du text chaine a l'emplacement Side Key XX de couleur CC  
-si B=0, pas de contour, si B=1 contour vert
+si B=0, pas de contour, si B=1 contour vert (le bouton reagit au click et retourne la position sur le topic key)
 Z est la taille de la police: 2 ou 3
 
 ### afficher un slider
@@ -70,7 +64,7 @@ envoie une demande de status
 ### Touche pressee (clickable, mecanique ou encorder)
 topic: j/[device]/e/k  
 content: [valeur bouton presse]  
-envoie le code de la touche pressee (valeur chaine constante boutons tactiles/mecaniques/encodeurs)
+envoie le code de position de la touche pressee (valeur chaine constante boutons tactiles/mecaniques/encodeurs)
 
 ### status
 topic: j/[device]/e/s  
